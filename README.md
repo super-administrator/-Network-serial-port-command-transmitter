@@ -54,18 +54,6 @@ python main.py
 
 ---
 
-## 📦 打包为 EXE（可选）
-
-如需在 Windows 下生成 `.exe` 可执行文件，可使用 `pyinstaller`：
-
-```bash
-pip install pyinstaller
-pyinstaller -F -w main.py
-```
-
-生成的文件位于 `dist/main.exe`，双击即可运行。
-
----
 
 ## 👨‍💻 开发者说明
 
