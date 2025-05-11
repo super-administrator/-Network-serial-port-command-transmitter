@@ -75,10 +75,9 @@ class MainWindow(QMainWindow):
         super().__init__()
         self.setWindowTitle("导播控制台")
         self.setFixedSize(768, 1152)
-
-        if getattr(sys, 'frozen', False):
-            self.script_dir = os.path.dirname(sys.executable)
-        else:
+        try:
+            self.script_dir = __compiled__.containing_dir
+        except NameError:
             self.script_dir = os.path.dirname(os.path.abspath(__file__))
 
         self.conf_path = os.path.join(self.script_dir, "conf_unified.json")
