@@ -39,16 +39,16 @@
 ```
 
 ---
-![2](https://github.com/user-attachments/assets/0ac2f51a-bc22-4ad8-8d4c-9cf08a06cd84)
-可通过编辑conf_unified.json增减按钮
 
+![2](https://github.com/user-attachments/assets/0ac2f51a-bc22-4ad8-8d4c-9cf08a06cd84)
+可通过编辑 conf_unified.json 增减按钮
 
 ## 🧰 运行方式
 
 ### 安装依赖
 
 ```bash
-pip install PySide6
+pip install -r requirements.txt
 ```
 
 ### 启动程序
@@ -57,12 +57,16 @@ pip install PySide6
 python main.py
 ```
 
----
+### 编译可执行文件
 
+```bash
+pyside6-deploy.exe .\main.py
+```
+
+---
 
 ## 👨‍💻 开发者说明
 
 本程序为方便自己所开发，目标是解决重复发送网络串口命令效率低的问题，实现操作图形化、命令自动化。
 
 希望它能为类似业务场景提供参考和帮助。
-
